@@ -32,9 +32,9 @@
 .search-input { width: 100%; max-width: 560px; padding: 9px 14px; box-sizing: border-box; border: 1.5px solid #cbd5e1; border-radius: 10px; font-size: 13px; font-family: inherit; margin: 0 auto 18px auto; display: block; outline: none; }
 .search-input:focus { border-color: #3b82f6; }
 
-/* ===================== Grid & kartu ===================== */
-.team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 16px; }
-.team-card { background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 16px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+/* ===================== Grid & kartu anggota ===================== */
+.team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; align-items: stretch; }
+.team-card { height: 100%; box-sizing: border-box; background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 16px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
 .team-card.card-new { background: #f0f9ff; border-color: #38bdf8; }
 .card-avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; margin-bottom: 8px; }
 .card-name { font-size: 16px; font-weight: 700; color: #0f172a; margin: 0 0 3px; }
@@ -60,11 +60,11 @@
 /* ================= MODUL 1.6 ================= */
 
 /* Layout & Header */
-.app-layout { max-width: 1200px; margin: 0 auto; padding: 24px; font-family: system-ui, sans-serif; font-size: 16px; }
+.app-layout { width: 100%; max-width: 1200px; margin: 0 auto; padding: 24px; box-sizing: border-box; font-family: system-ui, sans-serif; font-size: 16px; }
 .main-header { text-align: center; margin-bottom: 24px; }
 .main-header h1 { font-size: 28px; font-weight: 800; letter-spacing: -0.5px; margin: 0 0 4px; color: #0f172a; }
 .main-header p { font-size: 14px; color: #64748b; }
-.main-content { margin-top: 24px; }
+.main-content { width: 100%; margin-top: 24px; }
 
 /* Tab */
 .tab-bar { display: inline-flex; gap: 8px; background: #e2e8f0; padding: 4px; border-radius: 10px; margin-top: 12px; }
@@ -74,15 +74,6 @@
   border-radius: 8px; cursor: pointer; transition: all 0.2s;
 }
 .tab-btn.active { background: #ffffff; color: #2563eb; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
-
-/* Tab Anggota Tim: 4 kartu satu baris */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 20px;
-  align-items: stretch;
-}
-.team-card { height: 100%; box-sizing: border-box; }
 
 /* Toolbar berita */
 .news-container { width: 100%; text-align: left; }
